@@ -35,9 +35,9 @@ export function Hero() {
 
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/40 to-charcoal/85"
+        className="absolute inset-0 bg-gradient-to-b from-charcoal/85 via-charcoal/60 to-charcoal"
       />
-      <div aria-hidden className="absolute inset-0 bg-charcoal/25 mix-blend-multiply" />
+      <div aria-hidden className="absolute inset-0 bg-charcoal/30" />
 
       <div className="relative z-10 mx-auto flex h-full max-w-[1400px] flex-col justify-end px-6 pb-24 pt-40 md:px-10 md:pb-28">
         <motion.p
