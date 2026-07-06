@@ -14,7 +14,288 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blog_posts: {
+        Row: {
+          body_md: string | null
+          cover_url: string | null
+          created_at: string
+          excerpt: string | null
+          id: string
+          published: boolean
+          published_at: string | null
+          slug: string
+          title: string
+        }
+        Insert: {
+          body_md?: string | null
+          cover_url?: string | null
+          created_at?: string
+          excerpt?: string | null
+          id?: string
+          published?: boolean
+          published_at?: string | null
+          slug: string
+          title: string
+        }
+        Update: {
+          body_md?: string | null
+          cover_url?: string | null
+          created_at?: string
+          excerpt?: string | null
+          id?: string
+          published?: boolean
+          published_at?: string | null
+          slug?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      books: {
+        Row: {
+          buy_url: string | null
+          cover_url: string | null
+          created_at: string
+          description: string | null
+          gains: string | null
+          id: string
+          order_index: number | null
+          published: boolean
+          sample_url: string | null
+          subtitle: string | null
+          title: string
+          updated_at: string
+          who_for: string | null
+          why_written: string | null
+        }
+        Insert: {
+          buy_url?: string | null
+          cover_url?: string | null
+          created_at?: string
+          description?: string | null
+          gains?: string | null
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          sample_url?: string | null
+          subtitle?: string | null
+          title: string
+          updated_at?: string
+          who_for?: string | null
+          why_written?: string | null
+        }
+        Update: {
+          buy_url?: string | null
+          cover_url?: string | null
+          created_at?: string
+          description?: string | null
+          gains?: string | null
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          sample_url?: string | null
+          subtitle?: string | null
+          title?: string
+          updated_at?: string
+          who_for?: string | null
+          why_written?: string | null
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          organization: string | null
+          phone: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          organization?: string | null
+          phone?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          organization?: string | null
+          phone?: string | null
+        }
+        Relationships: []
+      }
+      devotionals: {
+        Row: {
+          body_md: string | null
+          created_at: string
+          id: string
+          published: boolean
+          published_at: string | null
+          scripture: string | null
+          slug: string
+          title: string
+        }
+        Insert: {
+          body_md?: string | null
+          created_at?: string
+          id?: string
+          published?: boolean
+          published_at?: string | null
+          scripture?: string | null
+          slug: string
+          title: string
+        }
+        Update: {
+          body_md?: string | null
+          created_at?: string
+          id?: string
+          published?: boolean
+          published_at?: string | null
+          scripture?: string | null
+          slug?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      events: {
+        Row: {
+          created_at: string
+          cta_url: string | null
+          description: string | null
+          event_date: string | null
+          id: string
+          location: string | null
+          published: boolean
+          title: string
+        }
+        Insert: {
+          created_at?: string
+          cta_url?: string | null
+          description?: string | null
+          event_date?: string | null
+          id?: string
+          location?: string | null
+          published?: boolean
+          title: string
+        }
+        Update: {
+          created_at?: string
+          cta_url?: string | null
+          description?: string | null
+          event_date?: string | null
+          id?: string
+          location?: string | null
+          published?: boolean
+          title?: string
+        }
+        Relationships: []
+      }
+      gallery_items: {
+        Row: {
+          caption: string | null
+          created_at: string
+          id: string
+          image_url: string
+          order_index: number | null
+          published: boolean
+          tags: string[] | null
+        }
+        Insert: {
+          caption?: string | null
+          created_at?: string
+          id?: string
+          image_url: string
+          order_index?: number | null
+          published?: boolean
+          tags?: string[] | null
+        }
+        Update: {
+          caption?: string | null
+          created_at?: string
+          id?: string
+          image_url?: string
+          order_index?: number | null
+          published?: boolean
+          tags?: string[] | null
+        }
+        Relationships: []
+      }
+      speaking_engagements: {
+        Row: {
+          created_at: string
+          description: string | null
+          icon: string | null
+          id: string
+          order_index: number | null
+          published: boolean
+          type: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          icon?: string | null
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          type: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          icon?: string | null
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          type?: string
+        }
+        Relationships: []
+      }
+      testimonials: {
+        Row: {
+          author: string
+          avatar_url: string | null
+          created_at: string
+          featured: boolean
+          id: string
+          order_index: number | null
+          published: boolean
+          quote: string
+          rating: number
+          role: string | null
+        }
+        Insert: {
+          author: string
+          avatar_url?: string | null
+          created_at?: string
+          featured?: boolean
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          quote: string
+          rating?: number
+          role?: string | null
+        }
+        Update: {
+          author?: string
+          avatar_url?: string | null
+          created_at?: string
+          featured?: boolean
+          id?: string
+          order_index?: number | null
+          published?: boolean
+          quote?: string
+          rating?: number
+          role?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
