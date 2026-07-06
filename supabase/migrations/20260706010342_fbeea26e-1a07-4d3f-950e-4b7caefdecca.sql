@@ -1,0 +1,1 @@
+UPDATE public.books SET title = 'In It! Over It! Under It!', subtitle = 'A Poetic Journey Through the Chaos of Love' WHERE title = 'Love Provoking Change';
