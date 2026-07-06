@@ -17,17 +17,17 @@ export const Route = createFileRoute("/book")({
   loader: ({ context }) => context.queryClient.ensureQueryData(q),
   head: () => ({
     meta: [
-      { title: "The Book — Love Provoking Change" },
+      { title: "In It! Over It! Under It! — A Book by Marsha Holland Kahn" },
       {
         name: "description",
         content:
-          "Love Provoking Change — the debut book from Min. Marsha Holland Kahn on the everlasting love of Christ and the tender, patient work of transformation.",
+          "In It! Over It! Under It! — A Poetic Journey Through the Chaos of Love. The debut book from Min. Marsha Holland Kahn on the everlasting love of Christ and the tender, patient work of transformation.",
       },
-      { property: "og:title", content: "Love Provoking Change — The Book" },
+      { property: "og:title", content: "In It! Over It! Under It! — Marsha Holland Kahn" },
       {
         property: "og:description",
         content:
-          "An everlasting love, put to paper. A tender, unflinching call to let Christ finish what He began.",
+          "A poetic journey through the chaos of love — in it, over it, under it.",
       },
       { property: "og:url", content: "/book" },
       { property: "og:type", content: "book" },
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/book")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Book",
-          name: "Love Provoking Change",
+          name: "In It! Over It! Under It!",
           author: { "@type": "Person", name: "Marsha Holland Kahn" },
           inLanguage: "en",
           bookFormat: "https://schema.org/EBook",
