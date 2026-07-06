@@ -77,14 +77,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Love Provoking Change — Min. Marsha Holland Kahn" },
+      {
+        name: "description",
+        content:
+          "The ministry, book, and speaking of Min. Marsha Holland Kahn — encouraging hearts, empowering lives, and inspiring lasting change through the love of Christ.",
+      },
+      { name: "author", content: "Min. Marsha Holland Kahn" },
+      {
+        name: "keywords",
+        content:
+          "Christian author, Christian speaker, women's ministry, inspirational book, faith-based encouragement, Love Provoking Change, Marsha Holland Kahn",
+      },
+      { property: "og:title", content: "Love Provoking Change — Min. Marsha Holland Kahn" },
+      {
+        property: "og:description",
+        content:
+          "Where faith becomes action, hope becomes healing, and love becomes transformation.",
+      },
+      { property: "og:site_name", content: "Love Provoking Change" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#FAF8F4" },
     ],
     links: [
       {
@@ -92,6 +106,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Marsha Holland Kahn",
+          alternateName: "Min. Marsha Holland Kahn",
+          jobTitle: "Christian Author, Speaker, Minister",
+          honorificSuffix: "M.Div.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Durham",
+            addressRegion: "NC",
+            addressCountry: "US",
+          },
+          worksFor: {
+            "@type": "Organization",
+            name: "Love Provoking Change Outreach",
+          },
+          telephone: "+1-609-922-4957",
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
