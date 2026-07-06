@@ -11,10 +11,10 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
   const y = useTransform(scrollYProgress, [0, 1], [80, -80]);
 
   const b = book ?? {
-    title: "Love Provoking Change",
-    subtitle: "Jeremiah 31:3 — I have loved you with an everlasting love",
+    title: "In It! Over It! Under It!",
+    subtitle: "A Poetic Journey Through the Chaos of Love",
     description:
-      "A tender, unflinching call to let the everlasting love of Christ interrupt everything — our fear, our striving, our old stories — and finish the work of transformation He began.",
+      "A poetic journey through the chaos of love — in it, over it, under it — where the everlasting love of Christ meets us in every layer and finishes the work of transformation He began.",
     why_written:
       "Written from a season where love felt scarce and hope felt distant.",
     who_for:
