@@ -18,7 +18,7 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
     why_written:
       "Written from a season where love felt scarce and hope felt distant.",
     who_for:
-      "For readers weary of performing their faith and hungry for tenderness.",
+      "For anyone who has doubted themselves, questioned God, and/or given up on the idea of true and everlasting love.",
     gains: "A softer heart. A steadier hope. A re-introduction to the Father's love.",
     buy_url: null,
     sample_url: null,
