@@ -28,7 +28,10 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
 
   const AMAZON_URL =
     "https://www.amazon.com/Over-Under-Poetic-Journey-Through/dp/B0GTWFSRTH/";
+  const SAMPLE_URL =
+    "https://www.amazon.com/Over-Under-Poetic-Journey-Through/dp/B0GTWFSRTH/?asin=B0GTWFSRTH&revisionId=&format=4&depth=1";
   const buyUrl = b.buy_url ?? AMAZON_URL;
+  const sampleUrl = b.sample_url ?? SAMPLE_URL;
 
   return (
     <section ref={ref} className="relative overflow-hidden bg-warm-white py-32 md:py-44">
@@ -99,12 +102,14 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
                 >
                   Order Now
                 </a>
-                <Link
-                  to="/book"
+                <a
+                  href={sampleUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center border border-charcoal/25 px-7 py-3.5 text-xs uppercase tracking-[0.28em] text-charcoal transition hover:border-gold hover:text-gold"
                 >
                   Read a Sample
-                </Link>
+                </a>
               </div>
             </Reveal>
           </div>
