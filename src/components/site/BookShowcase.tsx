@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import { Reveal, SectionMarker } from "./Primitives";
 import type { SiteContent } from "@/lib/content.functions";
+import bookCover from "@/assets/book-cover.png.asset.json";
 
 export function BookShowcase({ book }: { book: SiteContent["book"] }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,7 +34,7 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
           <div className="md:col-span-6" style={{ perspective: 1600 }}>
             <motion.div
               style={{ rotateY, y }}
-              className="relative mx-auto aspect-[3/4] w-full max-w-md"
+              className="relative mx-auto aspect-[809/1288] w-full max-w-md"
             >
               {/* Book */}
               <div className="absolute inset-0 [transform-style:preserve-3d]">
@@ -44,40 +45,14 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
                 />
                 {/* Cover */}
                 <div className="relative h-full w-full overflow-hidden rounded-sm shadow-[0_60px_120px_-40px_rgba(29,29,29,0.55)] [transform:translateZ(20px)]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-[#2a2620] to-[#3a2f1e]" />
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 opacity-40"
-                    style={{
-                      background:
-                        "radial-gradient(circle at 30% 20%, rgba(198,163,90,0.55), transparent 55%)",
-                    }}
+                  <img
+                    src={bookCover.url}
+                    alt={`Cover of ${b.title} — ${b.subtitle ?? "A Poetic Journey Through the Chaos of Love"} by Marsha Holland Kahn`}
+                    loading="lazy"
+                    className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/70 to-transparent" />
-                  <div className="relative flex h-full flex-col justify-between p-10 text-warm-white">
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.42em] text-gold">
-                        A Book by Marsha Holland Kahn
-                      </p>
-                      <div className="mt-8 h-px w-12 bg-gold" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-4xl italic leading-[0.95] text-warm-white">
-                        {b.title}
-                      </h3>
-                      <p className="mt-6 font-display text-xs uppercase tracking-[0.32em] text-warm-white/70">
-                        Jeremiah 31:3
-                      </p>
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-3">
-                        <span className="h-px w-6 bg-gold" />
-                        <span className="text-[10px] uppercase tracking-[0.42em] text-warm-white/60">
-                          Everlasting Love
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                  <div className="absolute inset-y-0 left-0 w-2 bg-gradient-to-r from-black/40 to-transparent" />
+                  <div aria-hidden className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-charcoal/10" />
                 </div>
               </div>
             </motion.div>
