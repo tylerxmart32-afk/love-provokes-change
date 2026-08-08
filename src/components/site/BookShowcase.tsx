@@ -22,9 +22,13 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
       "For anyone who has doubted themselves, questioned God, and/or given up on the idea of true and everlasting love.",
     gains:
       "Reassurance that you are not alone. A new perspective on how true love is defined. Peace for the continued mending of some broken pieces of your heart. A new friend. And a re-introduction to God the Father and his kindness that leads us home.",
-    buy_url: null,
+    buy_url: null as string | null,
     sample_url: null,
   };
+
+  const AMAZON_URL =
+    "https://www.amazon.com/Over-Under-Poetic-Journey-Through/dp/B0GTWFSRTH/";
+  const buyUrl = b.buy_url ?? AMAZON_URL;
 
   return (
     <section ref={ref} className="relative overflow-hidden bg-warm-white py-32 md:py-44">
@@ -87,12 +91,14 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
             </div>
             <Reveal delay={0.45}>
               <div className="mt-12 flex flex-wrap gap-4">
-                <Link
-                  to="/book"
-                  className="inline-flex items-center justify-center bg-charcoal px-7 py-3.5 text-xs uppercase tracking-[0.28em] text-warm-white transition hover:bg-gold hover:text-charcoal"
+                <a
+                  href={buyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-charcoal px-7 py-3.5 text-xs uppercase tracking-[0.28em] text-warm-white transition hover:bg-gold hover:text-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
                 >
                   Order Now
-                </Link>
+                </a>
                 <Link
                   to="/book"
                   className="inline-flex items-center justify-center border border-charcoal/25 px-7 py-3.5 text-xs uppercase tracking-[0.28em] text-charcoal transition hover:border-gold hover:text-gold"
