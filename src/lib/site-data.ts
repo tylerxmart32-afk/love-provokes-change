@@ -12,6 +12,8 @@ import {
   Mountain,
   BookOpen,
   MessagesSquare,
+  UsersRound,
+  GraduationCap,
 } from "lucide-react";
 
 export type Theme = { name: string; blurb: string; Icon: LucideIcon };
@@ -34,6 +36,8 @@ export const engagementIcons: Record<string, LucideIcon> = {
   "book-open": BookOpen,
   compass: Compass,
   "messages-square": MessagesSquare,
+  "users-round": UsersRound,
+  "graduation-cap": GraduationCap,
 };
 
 export const CONTACT = {
