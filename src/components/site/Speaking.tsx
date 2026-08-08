@@ -49,6 +49,8 @@ export function Speaking({ items }: { items: SiteContent["speaking"] }) {
                     { id: "4", type: "Bible Studies", description: "Warm, accessible teaching.", icon: "book-open" },
                     { id: "5", type: "Leadership", description: "Sessions for pastors and teams.", icon: "compass" },
                     { id: "6", type: "Panel Discussions", description: "Faith, womanhood, healing, hope.", icon: "messages-square" },
+                    { id: "7", type: "Youth Events", description: "Chapels, lock-ins, and youth Sundays.", icon: "users-round" },
+                    { id: "8", type: "Young Adult Discussions", description: "Identity, dating, calling, and faith.", icon: "graduation-cap" },
                   ]
               ).map((s, i) => {
                 const Icon = (s.icon && engagementIcons[s.icon]) || Sparkles;
