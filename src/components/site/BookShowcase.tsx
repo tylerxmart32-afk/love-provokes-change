@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Link } from "@tanstack/react-router";
 import { Reveal, SectionMarker } from "./Primitives";
 import type { SiteContent } from "@/lib/content.functions";
 import bookCover from "@/assets/book-cover.png.asset.json";
