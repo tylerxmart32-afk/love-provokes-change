@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { Reveal, SectionMarker } from "./Primitives";
 import { portraits } from "@/lib/portraits";
+import praiseFlyer from "@/assets/journey-praise-flyer.jpeg.asset.json";
+import worshipMic from "@/assets/journey-worship-mic.jpeg.asset.json";
+import gradCap from "@/assets/journey-graduation-cap.jpg.asset.json";
+import gradCelebrate from "@/assets/journey-graduation-celebrate.jpg.asset.json";
+import necklace from "@/assets/journey-marsha-necklace.jpg.asset.json";
+import preaching from "@/assets/journey-preaching-pulpit.jpeg.asset.json";
+import praiseHands from "@/assets/journey-praise-hands.jpeg.asset.json";
 
 type Item = { src: string; alt: string; span?: "row" | "col" | "both"; pos?: string };
 
@@ -11,7 +18,33 @@ const items: Item[] = [
   { src: portraits.joy, alt: "Marsha smiling.", pos: "50% 20%" },
   { src: portraits.zebra, alt: "Marsha beside a zebra painting.", span: "row" },
   { src: portraits.circle, alt: "Marsha portrait." },
-  { src: portraits.library, alt: "Marsha in a library — detail.", pos: "60% 40%" },
+  {
+    src: preaching.url,
+    alt: "Marsha preaching from the pulpit at Redeeming Life Full Gospel Ministries.",
+    span: "col",
+    pos: "50% 30%",
+  },
+  {
+    src: praiseHands.url,
+    alt: "Marsha lifting a hand in worship beneath the Redeeming Life Full Gospel Ministries sign.",
+    span: "row",
+    pos: "60% 60%",
+  },
+  { src: worshipMic.url, alt: "Marsha leading worship with a microphone at a women's gathering.", pos: "50% 35%" },
+  {
+    src: gradCelebrate.url,
+    alt: "Marsha celebrating with arms raised in cap and gown at her seminary graduation.",
+    span: "row",
+    pos: "50% 30%",
+  },
+  { src: gradCap.url, alt: "Marsha smiling in her graduation cap and tassel.", pos: "50% 40%" },
+  { src: necklace.url, alt: "Marsha smiling in sunglasses, wearing her name necklace.", pos: "50% 45%" },
+  {
+    src: praiseFlyer.url,
+    alt: "Event flyer announcing Min. Marsha Holland Kahn of Love Provoking Change Outreach Ministry as guest speaker.",
+    span: "col",
+    pos: "50% 45%",
+  },
 ];
 
 export function Gallery() {
