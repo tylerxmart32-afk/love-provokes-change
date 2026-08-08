@@ -10,6 +10,17 @@ import gradCelebrate from "@/assets/journey-graduation-celebrate.jpg.asset.json"
 import necklace from "@/assets/journey-marsha-necklace.jpg.asset.json";
 import preaching from "@/assets/journey-preaching-pulpit.jpeg.asset.json";
 import praiseHands from "@/assets/journey-praise-hands.jpeg.asset.json";
+import studioBow from "@/assets/studio-bow.jpg.asset.json";
+import studioChair from "@/assets/studio-chair.jpg.asset.json";
+import studioSmile from "@/assets/studio-smile.jpg.asset.json";
+import studioColorUp from "@/assets/studio-color-look-up.jpg.asset.json";
+import studioColorPortrait from "@/assets/studio-color-portrait.jpg.asset.json";
+import studioArmsOpen from "@/assets/studio-arms-open.jpg.asset.json";
+import pianoService from "@/assets/ministry-piano-service.jpg.asset.json";
+import speakerSlide from "@/assets/ministry-speaker-slide.jpg.asset.json";
+import flyerYouth from "@/assets/flyer-youth-weekend.jpg.asset.json";
+import flyerFridayNight from "@/assets/flyer-friday-night-live.jpg.asset.json";
+import flyerFaithTabernacle from "@/assets/flyer-faith-tabernacle.jpeg.asset.json";
 
 type Item = { src: string; alt: string; span?: "row" | "col" | "both"; pos?: string };
 
@@ -44,6 +55,45 @@ const items: Item[] = [
     alt: "Event flyer announcing Min. Marsha Holland Kahn of Love Provoking Change Outreach Ministry as guest speaker.",
     span: "col",
     pos: "50% 45%",
+  },
+  {
+    src: studioSmile.url,
+    alt: "Studio portrait of Marsha resting her chin on her hand, smiling.",
+    span: "row",
+    pos: "50% 40%",
+  },
+  { src: studioBow.url, alt: "Marsha in all black, leaning forward with a warm smile in the studio.", pos: "50% 40%" },
+  { src: studioChair.url, alt: "Marsha seated in a black striped armchair in the studio.", span: "col", pos: "50% 40%" },
+  {
+    src: studioColorPortrait.url,
+    alt: "Studio portrait of Marsha in a bright paint-splatter top.",
+    span: "row",
+    pos: "50% 35%",
+  },
+  { src: studioColorUp.url, alt: "Marsha looking upward in a vivid paint-splatter top.", pos: "50% 35%" },
+  {
+    src: studioArmsOpen.url,
+    alt: "Marsha with both arms raised in joy, wearing a denim jacket and olive skirt.",
+    span: "col",
+    pos: "50% 35%",
+  },
+  { src: pianoService.url, alt: "Marsha seated during a worship service beside the piano and keyboard.", pos: "50% 45%" },
+  {
+    src: speakerSlide.url,
+    alt: "Marsha preaching beside a screen announcing her message, 'Don't Despise it Eat it Up.'",
+    span: "row",
+    pos: "50% 45%",
+  },
+  { src: flyerYouth.url, alt: "Flyer for GGBC Youth Weekend 2014 featuring Minister Marsha Holland.", pos: "50% 45%" },
+  {
+    src: flyerFridayNight.url,
+    alt: "Friday Night Live flyer from New Holy Cross Church with guest preacher Minister Marsha Holland.",
+    pos: "50% 40%",
+  },
+  {
+    src: flyerFaithTabernacle.url,
+    alt: "Faith Tabernacle Holy Church service flyer with guest worship leader Ms. Marsha Holland.",
+    pos: "50% 40%",
   },
 ];
 
