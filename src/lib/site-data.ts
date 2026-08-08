@@ -43,7 +43,7 @@ export const engagementIcons: Record<string, LucideIcon> = {
 export const CONTACT = {
   phone: "(609) 922-4957",
   phoneHref: "tel:+16099224957",
-  email: "hello@loveprovokingchange.com",
+  email: "loveprovokingchange@gmail.com",
   city: "Durham, North Carolina",
 };
 
