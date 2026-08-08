@@ -19,7 +19,8 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
       "Written from a season where love felt scarce and hope felt distant.",
     who_for:
       "For anyone who has doubted themselves, questioned God, and/or given up on the idea of true and everlasting love.",
-    gains: "A softer heart. A steadier hope. A re-introduction to the Father's love.",
+    gains:
+      "Reassurance that you are not alone. A new perspective on how true love is defined. Peace for the continued mending of some broken pieces of your heart. A new friend. And a re-introduction to God the Father and his kindness that leads us home.",
     buy_url: null,
     sample_url: null,
   };
