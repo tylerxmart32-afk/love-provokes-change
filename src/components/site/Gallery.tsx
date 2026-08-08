@@ -12,7 +12,6 @@ const items: Item[] = [
   { src: portraits.zebra, alt: "Marsha beside a zebra painting.", span: "row" },
   { src: portraits.circle, alt: "Marsha portrait." },
   { src: portraits.library, alt: "Marsha in a library — detail.", pos: "60% 40%" },
-  { src: portraits.joy, alt: "Marsha smiling — detail.", pos: "50% 45%" },
 ];
 
 export function Gallery() {
