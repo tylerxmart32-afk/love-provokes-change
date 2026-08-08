@@ -48,8 +48,8 @@ export const CONTACT = {
 };
 
 export const SCRIPTURE = {
-  text: "I have loved you with an everlasting love; therefore I have continued My faithfulness to you.",
-  ref: "Jeremiah 31:3 (NASB)",
+  text: "Yes, I have loved you with an everlasting love; therefore with loving-kindness have I drawn you and continued My faithfulness to you.",
+  ref: "Jeremiah 31:3 (AMPC)",
 };
 
 export const BRAND = {
