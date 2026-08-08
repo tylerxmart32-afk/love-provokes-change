@@ -134,6 +134,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             name: "Love Provoking Change Outreach",
           },
           telephone: "+1-609-922-4957",
+          sameAs: [
+            "https://www.facebook.com/ms.mlholland",
+            "https://www.instagram.com/mrsmlhk/",
+          ],
         }),
       },
     ],

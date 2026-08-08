@@ -47,6 +47,11 @@ export const CONTACT = {
   city: "Durham, North Carolina",
 };
 
+export const SOCIAL = {
+  facebook: "https://www.facebook.com/ms.mlholland",
+  instagram: "https://www.instagram.com/mrsmlhk/",
+};
+
 export const SCRIPTURE = {
   text: "Yes, I have loved you with an everlasting love; therefore with loving-kindness have I drawn you and continued My faithfulness to you.",
   ref: "Jeremiah 31:3 (AMPC)",
