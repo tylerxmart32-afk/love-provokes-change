@@ -1,5 +1,6 @@
 import { Reveal, SectionMarker } from "./Primitives";
 import { portraits } from "@/lib/portraits";
+import aboutPortrait from "@/assets/about-marsha-portrait.jpg.asset.json";
 
 export function About() {
   return (
@@ -11,11 +12,11 @@ export function About() {
             <Reveal>
               <div className="relative overflow-hidden">
                 <img
-                  src={portraits.library}
-                  alt="Portrait of Min. Marsha Holland Kahn seated in a library."
+                  src={aboutPortrait.url}
+                  alt="Studio portrait of Min. Marsha Holland Kahn in black, hands clasped, smiling."
                   loading="lazy"
                   className="aspect-[3/4] w-full object-cover"
-                  style={{ objectPosition: "50% 30%" }}
+                  style={{ objectPosition: "50% 25%" }}
                 />
                 <div aria-hidden className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-charcoal/10" />
               </div>
