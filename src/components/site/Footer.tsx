@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail } from "lucide-react";
-import { SCRIPTURE, BRAND, CONTACT } from "@/lib/site-data";
+import { SCRIPTURE, BRAND, CONTACT, SOCIAL } from "@/lib/site-data";
 
 function IgIcon({ size = 18 }: { size?: number }) {
   return (
@@ -18,14 +18,6 @@ function FbIcon({ size = 18 }: { size?: number }) {
     </svg>
   );
 }
-function YtIcon({ size = 18 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.5 12 4.5 12 4.5s-7 0-8.9.6A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1C5 19.5 12 19.5 12 19.5s7 0 8.9-.6A3 3 0 0 0 23 16.8 31 31 0 0 0 23.5 12 31 31 0 0 0 23 7.2zM9.8 15.5v-7L15.8 12l-6 3.5z" />
-    </svg>
-  );
-}
-
 export function Footer() {
   return (
     <footer className="bg-charcoal py-20 text-warm-white/70">
@@ -55,9 +47,8 @@ export function Footer() {
               <li>{CONTACT.city}</li>
             </ul>
             <div className="mt-6 flex gap-4 text-warm-white/60">
-              <a href="#" aria-label="Instagram" className="hover:text-gold"><IgIcon /></a>
-              <a href="#" aria-label="Facebook" className="hover:text-gold"><FbIcon /></a>
-              <a href="#" aria-label="YouTube" className="hover:text-gold"><YtIcon /></a>
+              <a href={SOCIAL.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-colors hover:text-gold focus-visible:text-gold"><IgIcon /></a>
+              <a href={SOCIAL.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition-colors hover:text-gold focus-visible:text-gold"><FbIcon /></a>
               <a href={`mailto:${CONTACT.email}`} aria-label="Email" className="hover:text-gold"><Mail size={18} /></a>
             </div>
           </div>
