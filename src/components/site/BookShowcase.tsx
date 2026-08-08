@@ -16,7 +16,7 @@ export function BookShowcase({ book }: { book: SiteContent["book"] }) {
     description:
       "A poetic journey through the chaos of love — in it, over it, under it — where the everlasting love of Christ meets us in every layer and finishes the work of transformation He began.",
     why_written:
-      "Written from a season where love felt scarce and hope felt distant.",
+      "Written from seasons where love felt scarce, hope felt distant, and a mended heart felt impossible, this book is Marsha's encouragement to you to embrace the journey — no matter where you are on it. It will get better. Your heart will heal.",
     who_for:
       "For anyone who has doubted themselves, questioned God, and/or given up on the idea of true and everlasting love.",
     gains:
